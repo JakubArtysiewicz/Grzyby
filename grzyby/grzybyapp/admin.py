@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from grzybyapp.models import Grzyby, Rodzina, Potrawa
+
+admin.site.register(Rodzina)
+admin.site.register(Potrawa)
+admin.site.register(Grzyby)
