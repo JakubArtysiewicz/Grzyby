@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from grzybyapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('grzyby/', views.index, name='grzyby'),
 ]
