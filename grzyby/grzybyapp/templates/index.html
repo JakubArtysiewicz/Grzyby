@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <title>Grzyby</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
 </head>
 <body>
-    {% for i in grzyby %}
-        <ol>
-            {{ i.nazwa }}
-        </ol>
-    {% endfor %}
+    <img src="{% static 'borowik.jpg' %}" alt="borowik" >
+    <ol>
+        {% for i in grzyby %}
+            <li>{{ i }}</li>
+        {% endfor %}
+    </ol>
 </body>
 </html>
